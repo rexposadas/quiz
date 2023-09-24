@@ -1,24 +1,16 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
-class DiceRoller extends StatefulWidget {
-  const DiceRoller({super.key});
+class QuizMaker extends StatefulWidget {
+  const QuizMaker({super.key});
 
   @override
-  State<DiceRoller> createState() {
-    return _DiceRollerState();
+  State<QuizMaker> createState() {
+    return _QuizMakerState();
   }
 }
 
-class _DiceRollerState extends State<DiceRoller> {
-  int _diceValue = 1;
-
-  void _rollDice() {
-    setState(() {
-      _diceValue = 1 + Random().nextInt(5);
-    });
-  }
+class _QuizMakerState extends State<QuizMaker> {
+  void _rollDice() {}
 
   @override
   Widget build(context) {
@@ -26,7 +18,7 @@ class _DiceRollerState extends State<DiceRoller> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Image.asset('assets/images/dice-$_diceValue.png', width: 200),
+        Image.asset('assets/images/quiz-logo.png', width: 200),
         const SizedBox(height: 20.0),
         TextButton(onPressed: _rollDice, child: const Text('Roll Dice'))
       ],

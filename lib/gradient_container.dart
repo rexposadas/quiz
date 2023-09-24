@@ -1,8 +1,6 @@
 import 'package:first_app/dice_roller.dart';
 import 'package:flutter/material.dart';
 
-import 'package:first_app/styled_text.dart';
-
 void rollDice() {}
 
 class GradientContainer extends StatelessWidget {
@@ -18,13 +16,7 @@ class GradientContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: 16),
-          Text('Roll This Dice',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  backgroundColor: Colors.black,
-                  fontSize: 28.0,
-                  color: Colors.orangeAccent)),
-          DiceRoller(),
+          QuizMaker(),
         ],
       ),
     );
