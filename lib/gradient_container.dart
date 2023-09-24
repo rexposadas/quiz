@@ -10,18 +10,19 @@ class GradientContainer extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(12),
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          StyledText(),
-          SizedBox(height: 16),
-          Text('Learn Flutter basics.',
+          const StyledText("StyleText: this passed"),
+          const SizedBox(height: 16),
+          const Text('Learn Flutter basics.',
               textAlign: TextAlign.center,
               style: TextStyle(
                   backgroundColor: Colors.black,
                   fontSize: 28.0,
                   color: Colors.orangeAccent)),
+          Image.asset('assets/images/dice-2.png', width: 200),
         ],
       ),
     );
