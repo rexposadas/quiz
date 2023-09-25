@@ -12,6 +12,7 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(context) {
-    return const Text("question screen");
+    return const Text("Second Screen YYYYYYYYYYYYYYYY",
+        style: TextStyle(color: Colors.black, fontSize: 24.0));
   }
 }
